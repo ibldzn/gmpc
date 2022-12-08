@@ -35,9 +35,9 @@ int main(int argc, char** argv)
     mpz_init(result);
     sum_to(n, result);
 
-    char* res_str = mpz_get_str(NULL, 10, result);
-    puts(res_str);
-    free(res_str);
+    char* result_str = mpz_get_str(NULL, 10, result);
+    puts(result_str);
+    free(result_str);
 
     mpz_clear(result);
     mpz_clear(n);

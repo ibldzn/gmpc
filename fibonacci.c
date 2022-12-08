@@ -5,9 +5,6 @@
 // calculate `n`-th fibonacci
 void fibonacci(const mpz_t n, mpz_t out)
 {
-    // unnecessary but whatever
-    mpz_set_ui(out, 0);
-
     const int cmp = mpz_cmp_ui(n, 1);
     // if n == 1, return 1
     // else if n <= 0, return 0 (should probably raise an error but this should do it for now)
